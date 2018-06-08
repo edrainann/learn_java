@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--<bean id="helloBean01" class="Hello01">-->
+        <!--<property name="message" value="Hello World!"/>-->
+    <!--</bean>-->
+
+    <bean id="helloBean03" class="Hello01" scope="singleton">
+    </bean>
+
+    <!--<bean id="helloBean04" class="Hello01" scope="prototype">-->
+    <!--</bean>-->
+
+    <bean id="helloBean05" class="Hello02" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello World!!"/>
+    </bean>
+
+
+
+
+</beans>

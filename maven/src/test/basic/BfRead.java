@@ -4,8 +4,7 @@ import java.io.InputStreamReader;
 
 public class BfRead {
     // 使用 BufferedReader 在控制台读取字符
-    public static void main(String args[]) throws IOException
-    {
+    public static void main(String args[]) throws IOException {
         char c;
         // 使用 System.in 创建 BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,6 +13,6 @@ public class BfRead {
         do {
             c = (char) br.read();
             System.out.println(c);
-        } while(c != 'q');
+        } while (c != 'q');
     }
 }
