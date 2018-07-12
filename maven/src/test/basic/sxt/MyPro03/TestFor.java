@@ -14,6 +14,5 @@ public class TestFor {
             System.out.println("i= " + i + " j= " + j);
         }
 
-
     }
 }
