@@ -1,4 +1,7 @@
+//this指当前对象
+
 public class TestThis {
+    //成员变量
     int a, b, c;
 
     TestThis() {

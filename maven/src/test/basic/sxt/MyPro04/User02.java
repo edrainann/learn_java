@@ -1,5 +1,7 @@
 /**
  * 测试static关键字的用法
+ * static修饰的成员变量和方法，从属于类。
+ *普通变量和方法从属于对象的。
  */
 public class User02 {
     int id; // id
@@ -16,8 +18,8 @@ public class User02 {
     }
 
     public void login() {
-        printCompany();
-        System.out.println(company);
+        printCompany();//调用静态方法
+        System.out.println(company); //调用静态变量
         System.out.println("登录：" + name);
     }
 
@@ -28,7 +30,6 @@ public class User02 {
 
     public static void main(String[] args) {
 //        User02 u = new User02(101, "高小七");
-
         User02.printCompany();
         User02.company = "北京阿里爷爷";
         User02.printCompany();
